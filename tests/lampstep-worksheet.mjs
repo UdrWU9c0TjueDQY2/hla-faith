@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const s=fs.readFileSync(new URL('../src/lampstep/bible-application-worksheet/index.html',import.meta.url),'utf8');
+assert.equal((s.match(/<h1>/g)||[]).length,1);
+assert.equal((s.match(/<details>/g)||[]).length,3);
+assert.equal((s.match(/<summary>/g)||[]).length,3);
+assert.ok(!s.includes('<form'));
+assert.equal((s.match(/href="https:\/\/apps.apple.com/g)||[]).length,1);
+assert.ok(s.includes('id6820775927'));
+assert.ok(s.includes('@media(max-width:700px)')&&s.includes('@media print'));
+assert.ok(!s.includes('localStorage')&&!s.includes('fetch('));
+assert.ok(s.includes('publisher of Lampstep'));
+assert.ok(s.includes('rel="canonical"'));
+console.log('10 static checks passed; browser, print and mobile behavior require separate QA.');
