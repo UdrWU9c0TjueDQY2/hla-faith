@@ -1,0 +1,28 @@
+{
+ "name": "Faith for Real Life",
+ "tagline": "Small daily tools for Bible reading, prayer and growth",
+ "baseUrl": "https://faith-for-real-life.pages.dev",
+ "indexNowKey": "44e9522f6ce9e9b8547556c42f6df352",
+ "apps": [
+  {
+   "slug": "forged",
+   "name": "FORGED: Daily Bible for Men",
+   "id": 6794772046
+  },
+  {
+   "slug": "lampstep",
+   "name": "Lampstep: Bible for Real Life",
+   "id": 6820775927
+  },
+  {
+   "slug": "wayfold",
+   "name": "Wayfold: Understand the Bible",
+   "id": 6820304462
+  },
+  {
+   "slug": "ninefruit",
+   "name": "Ninefruit: Fruit of the Spirit",
+   "id": 6820778195
+  }
+ ]
+}
