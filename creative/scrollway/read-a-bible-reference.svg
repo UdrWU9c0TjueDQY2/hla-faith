@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500" role="img" aria-labelledby="title desc">
+<title id="title">How to read a Bible reference</title><desc id="desc">Luke 2:9 means the book of Luke, chapter 2, verse 9. Luke 9:2 points to a different chapter and verse. A range such as Luke 2:8–10 includes verses 8, 9 and 10.</desc>
+<style>text{font-family:'DejaVu Sans',sans-serif}.serif{font-family:'DejaVu Serif',serif}.label{font-size:28px;font-weight:bold;letter-spacing:2px}.body{font-size:38px}</style>
+<rect width="1000" height="1500" fill="#fbf5e6"/><path d="M0 0h1000v31H0z" fill="#93442c"/><text x="68" y="111" class="label" fill="#725335">BIBLE NAVIGATION</text>
+<g class="serif" fill="#232e2a" font-size="80"><text x="62" y="234">How to read a</text><text x="62" y="330">Bible reference</text></g>
+<rect x="59" y="396" width="882" height="347" rx="18" fill="#193b36"/>
+<g fill="#fff9e8" font-family="DejaVu Serif" font-size="110" text-anchor="middle"><text class="serif" x="235" y="555">Luke</text><text class="serif" x="505" y="555">2</text><text class="serif" x="602" y="550">:</text><text class="serif" x="722" y="555">9</text></g>
+<g stroke="#edc680" stroke-width="4"><path d="M235 581v47m270-47v47m217-47v47"/></g>
+<g class="label" fill="#edc680" text-anchor="middle"><text x="235" y="687">BOOK</text><text x="505" y="687">CHAPTER</text><text x="722" y="687">VERSE</text></g>
+<text x="66" y="826" class="body" fill="#253732">Open Luke. Find chapter 2.</text><text x="66" y="883" class="body" fill="#253732">Then find verse 9 inside that chapter.</text>
+<path d="M65 941h870" stroke="#c6b99b" stroke-width="3"/>
+<text x="66" y="1010" class="label" fill="#93442c">SWAP THE NUMBERS</text>
+<text x="66" y="1088" class="serif" font-size="57" fill="#253732">Luke 9:2</text>
+<text x="66" y="1150" class="body" fill="#253732">Same book. Now open chapter 9, verse 2.</text>
+<path d="M65 1209h870" stroke="#c6b99b" stroke-width="3"/>
+<text x="66" y="1276" class="label" fill="#93442c">READ A RANGE</text>
+<text x="66" y="1348" class="serif" font-size="56" fill="#253732">Luke 2:8–10</text>
+<text x="66" y="1405" class="body" fill="#253732">Read verses 8, 9 and 10 in chapter 2.</text>
+<text x="66" y="1470" font-size="23" fill="#665d4b">Honest Little Apps</text></svg>
