@@ -4,23 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>How to Keep a Men&#x27;s Bible Study Going | FORGED</title>
-<meta name="description" content="Lead a 15-minute discussion of James 1:19–22 with a printable guide for quiet groups, then use the start-date calculator to plan the next meetings.">
+<meta name="description" content="Lead a 15-minute men’s Bible study on James, then print four weekly or every-other-week meetings with a passage and a question for each date.">
 <link rel="canonical" href="https://udrwu9c0tjuedqy2.github.io/hla-faith/forged/how-to-keep-a-mens-bible-study-going/">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="article">
 <meta property="og:title" content="How to Keep a Men&#x27;s Bible Study Going | FORGED">
-<meta property="og:description" content="Lead a 15-minute discussion of James 1:19–22 with a printable guide for quiet groups, then use the start-date calculator to plan the next meetings.">
+<meta property="og:description" content="Lead a 15-minute men’s Bible study on James, then print four weekly or every-other-week meetings with a passage and a question for each date.">
 <meta property="og:url" content="https://udrwu9c0tjuedqy2.github.io/hla-faith/forged/how-to-keep-a-mens-bible-study-going/">
 <meta property="og:image" content="https://udrwu9c0tjuedqy2.github.io/hla-faith/forged/how-to-keep-a-mens-bible-study-going/og.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Faith for Real Life">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="How to Keep a Men&#x27;s Bible Study Going | FORGED">
-<meta name="twitter:description" content="Lead a 15-minute discussion of James 1:19–22 with a printable guide for quiet groups, then use the start-date calculator to plan the next meetings.">
+<meta name="twitter:description" content="Lead a 15-minute men’s Bible study on James, then print four weekly or every-other-week meetings with a passage and a question for each date.">
 <meta name="twitter:image" content="https://udrwu9c0tjuedqy2.github.io/hla-faith/forged/how-to-keep-a-mens-bible-study-going/og.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/atom+xml" title="Faith for Real Life" href="/feed.xml">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Faith for Real Life", "item": "https://udrwu9c0tjuedqy2.github.io/hla-faith/"}, {"@type": "ListItem", "position": 2, "name": "FORGED: Daily Bible for Men", "item": "https://udrwu9c0tjuedqy2.github.io/hla-faith/forged/"}, {"@type": "ListItem", "position": 3, "name": "How to keep a men's Bible study going", "item": "https://udrwu9c0tjuedqy2.github.io/hla-faith/forged/how-to-keep-a-mens-bible-study-going/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Faith for Real Life", "item": "https://udrwu9c0tjuedqy2.github.io/hla-faith/"}, {"@type": "ListItem", "position": 2, "name": "How to keep a men's Bible study going", "item": "https://udrwu9c0tjuedqy2.github.io/hla-faith/forged/how-to-keep-a-mens-bible-study-going/"}]}</script>
 <link rel="preload" href="/assets/fonts/oswald-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <meta name="apple-itunes-app" content="app-id=6794772046">
 <style>
@@ -58,79 +58,236 @@ h2{font-size:clamp(1.5rem,5vw,2.1rem);margin-top:2em;color:var(--ember2)}
 .hla-links{list-style:none;padding:0;margin:0;display:grid;gap:10px}.hla-links li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}.hla-links a{font-weight:600;text-decoration:none;color:var(--ink)}.hla-links span{display:block;color:var(--mute);font-size:.9rem}
 .hla-footer{margin-top:50px;padding:24px 0 40px;border-top:1px solid var(--line);color:var(--mute);font-size:.88rem}.hla-footer a{color:inherit}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* Keep the study and the dated handout usable on a phone and on paper. */
+.flood{background:linear-gradient(160deg,#f18d47,#ffaf54 75%,#ffd28a)}
+.guide-links{display:flex;flex-wrap:wrap;gap:.5rem .9rem;position:relative}
+.guide-links a,.flood a:focus-visible{color:#251206;text-underline-offset:.2em;font-weight:600}
+.guide-links a{display:inline-flex;align-items:center;min-height:44px}
+.flood a:focus-visible{outline-color:#251206}
+.tool h2{font-size:clamp(1.6rem,5vw,2.1rem)}
+.tool [hidden]{display:none}
+.plan-controls{display:grid;grid-template-columns:1fr 1fr;gap:.65rem;margin:1rem 0 .45rem}
+.plan-controls>div{min-width:0}
+.tool label{display:block;color:var(--ink);font-weight:600;margin-bottom:.22rem}
+.plan-controls input,.plan-controls select,.tool textarea{display:block;min-width:0;width:100%;font:inherit;color:var(--ink);background:#2a1512;border:1px solid #896f60;border-radius:8px;padding:.55rem;line-height:1.4}
+.plan-controls input,.plan-controls select{min-height:46px;color-scheme:dark}
+.tool select:focus-visible,.tool summary:focus-visible,.tool textarea:focus-visible{outline:3px solid var(--ember);outline-offset:3px}
+#plan-status:not(:empty){margin:.5rem 0;font-size:1rem;font-weight:600;color:var(--ink)}
+.meeting-list{list-style:none;padding:0;margin:1rem 0;display:grid;gap:.5rem;counter-reset:session}
+.meeting-list li{counter-increment:session;border-left:3px solid var(--ember);padding:.55rem .8rem;background:#2a1918;border-radius:0 7px 7px 0;break-inside:avoid}
+.meeting-date{display:block;font-size:.875rem;font-weight:600;color:#d6c4b6}
+.meeting-date::before{content:"Meeting " counter(session)}
+.meeting-date:not(:empty)::before{content:"Meeting " counter(session) " · "}
+.passage{font-weight:600;text-underline-offset:.16em}
+.meeting-list .prompt{margin:.25rem 0 0;color:var(--ink);font-size:1rem}
+.plan-actions{display:flex;flex-wrap:wrap;gap:.55rem;margin:.85rem 0}
+.plan-actions button{border:1px solid var(--ember2);border-radius:7px;background:var(--ember2);color:#22120b;font:inherit;font-weight:600;padding:.52rem .9rem;min-height:44px;cursor:pointer}
+.plan-actions button+button{color:var(--ember2);background:transparent}
+.plan-actions button:disabled{cursor:default;opacity:.5}
+.app-milestones{margin-top:1.15rem;padding-top:.75rem;border-top:1px solid #61483b}
+.app-milestones summary{font-weight:600;color:var(--ember2);cursor:pointer;padding:.25rem 0}
+.app-milestones p{margin:.5rem 0}
+.print-byline,.print-notes{display:none}
+@media(max-width:390px){.plan-controls{grid-template-columns:1fr}.ms{grid-template-columns:1fr}.ms div{text-align:left}.ms b{display:inline-block;margin-right:.45rem}}
+@media print{
+  body.print-plan{background:#fff;color:#111}
+  .print-plan .wrap{max-width:none;margin:0;padding:0}
+  .print-plan main>:not(#tool),.print-plan .hla-footer,.print-plan .plan-controls,.print-plan .app-milestones,.print-plan .plan-actions,.print-plan #manual-copy,.print-plan #action-status,.print-plan noscript{display:none!important}
+  .print-plan .tool{margin:0;padding:0;box-shadow:none;border:0;background:white}
+  .print-plan .tool h2{font:700 22pt/1.12 system-ui;color:#171717;margin:0 0 8pt}
+  .print-plan .tool p,.print-plan .tool a,.print-plan .meeting-date{color:#222}
+  .print-plan #plan-status:not(:empty){color:#171717;font:600 12pt/1.4 system-ui}
+  .print-plan #plan-intro{display:none}
+  .print-plan .print-notes{display:block;margin-top:14pt;break-inside:avoid}
+  .print-plan .print-notes h3{font:700 13pt/1.3 system-ui;text-transform:none}
+  .print-plan .note-lines{border-top:1px solid #aaa;border-bottom:1px solid #aaa;height:20pt;margin:18pt 0 14pt}
+  .print-plan .meeting-list{gap:4pt;margin:10pt 0}
+  .print-plan .meeting-list li{background:white;border-color:#555;padding:5pt 8pt}
+  .print-plan .tool p{font:normal 11pt/1.35 system-ui}
+  .print-plan .meeting-date{font:600 10pt/1.35 system-ui}
+  .print-plan .passage{font:600 12pt/1.4 system-ui;text-decoration:none}
+  .print-plan .print-byline{display:block;font-size:9pt;border-top:1px solid #888;padding-top:6pt;margin-top:10pt}
+}
+
 </style>
 </head>
 <body>
 <div class="wrap">
+<main>
 <div class="flood">
 <svg class="lines" viewBox="0 0 640 400" preserveAspectRatio="none" aria-hidden="true"><g stroke="#fff" stroke-width="1" fill="none"><path d="M20 60 L140 120 L260 70 L380 150 L520 90 L620 160"/><path d="M60 300 L200 240 L330 320 L460 250 L600 330"/></g><g fill="#fff"><circle cx="20" cy="60" r="3"/><circle cx="140" cy="120" r="3"/><circle cx="260" cy="70" r="3"/><circle cx="380" cy="150" r="3"/><circle cx="520" cy="90" r="3"/><circle cx="620" cy="160" r="3"/><circle cx="60" cy="300" r="3"/><circle cx="200" cy="240" r="3"/><circle cx="330" cy="320" r="3"/><circle cx="460" cy="250" r="3"/><circle cx="600" cy="330" r="3"/></g></svg>
 <header class="top"><a href="/">Faith for Real Life</a><a href="/about/">About</a></header>
-<main>
 <section class="hero">
 <p class="upd">A field guide for Bible study leaders</p>
 <h1>When the group<span class="l2">goes quiet.</span></h1>
-<p class="sub">Lead a 15-minute discussion of James 1:19–22. Everyone can contribute with one word, a written thought, or a chance to speak later.</p><p><a href="quiet-group-discussion-guide.pdf">Print the one-page leader guide (PDF)</a> · <a href="#letter">Read the guide here</a></p>
-<div class="badge-row"><a class="hla-badge" href="https://apps.apple.com/app/id6794772046?ct=faith-how-to-keep-a-mens-bible&mt=8" rel="noopener" aria-label="Download on the App Store"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1276560000" alt="Download on the App Store" width="150" height="50" loading="eager" decoding="async"></a><small>FORGED · Free Day 1 on iPhone</small></div>
+<p class="sub">Lead a 15-minute discussion of James 1:19–22. Everyone can speak, write, or pass.</p>
+<nav class="guide-links" aria-label="Leader resources"><a href="#letter">Read the 15-minute guide</a><a href="#tool">Plan four meetings</a><a href="quiet-group-discussion-guide.pdf">Get the one-page guide (PDF)</a></nav>
 </section>
 </div>
 
-<h2 id="answer">The short answer</h2>
+<h2 id="answer">An opening question anyone can answer</h2>
 <p>Start with a question someone can answer straight from the passage. Ask for one word they noticed. Give people time to find it before asking what it might mean for the week ahead.</p>
 
-<h2 id="screens">The shared day, as it looks on a phone</h2>
+<h2 id="letter">A 15-minute discussion for a quiet group</h2><div class="letter"><p>Use a Bible and a pencil. Open <a href="https://bible.usccb.org/bible/james/1">James 1:19–22</a>. Each person may speak, write, or pass.</p><h3>0–3 min · Read twice</h3><p>Read James 1:19–22 aloud. Invite everyone to listen for one action verb on the second reading. Give the room a quiet moment to find one.</p><h3>3–6 min · Ask for a word, not a speech</h3><p>Ask, “Which action did you notice?” If nobody answers, offer a choice: “What do you notice about listening, or about doing?” A single word is enough.</p><h3>6–11 min · Bring the passage into a situation</h3><p>Imagine that two people start speaking at once during a meeting. Ask, “What could someone do in the next ten seconds?” Let people think alone or discuss in pairs before inviting an answer.</p><h3>11–15 min · Choose a next step</h3><p>Invite each person to finish this sentence privately: “When ___ happens this week, I can ___.” Offer a chance to share. Close with a brief prayer if the group wishes.</p><p><strong>Next time:</strong> What happened when you tried your small action? “I forgot” is a perfectly usable answer.</p><p><a href="quiet-group-discussion-guide.pdf">Download the one-page leader guide (PDF)</a></p></div>
+
+<section class="tool" id="tool" aria-labelledby="plan-heading">
+<h2 id="plan-heading">Plan four meetings in James</h2>
+<p id="plan-intro">Choose the first date and how often the group meets. Each meeting has a passage to read together and one opening question. Anyone can use the plan with a Bible.</p>
+<div class="plan-controls" id="plan-controls" hidden>
+<div><label for="start">First meeting</label><input type="date" id="start" min="0001-01-01" max="9999-12-31" required></div>
+<div><label for="frequency">Meet</label><select id="frequency"><option value="7">Every week</option><option value="14">Every other week</option></select></div>
+</div>
+<noscript><p>The four readings below work in order. Add your own meeting dates to a printed copy.</p></noscript>
+<p id="plan-status" role="status" aria-atomic="true"></p>
+<ol class="meeting-list">
+<li><span class="meeting-date"></span><a class="passage" href="https://bible.usccb.org/bible/james/1">James 1:19–22</a><p class="prompt">Two people start speaking at once. What could a listener do in the next ten seconds?</p></li>
+<li><span class="meeting-date"></span><a class="passage" href="https://bible.usccb.org/bible/james/1">James 1:22–25</a><p class="prompt">Why does James bring a mirror into his example? What might someone do after looking?</p></li>
+<li><span class="meeting-date"></span><a class="passage" href="https://bible.usccb.org/bible/james/2">James 2:14–18</a><p class="prompt">A neighbour mentions an empty cupboard. What is one useful thing to ask before offering help?</p></li>
+<li><span class="meeting-date"></span><a class="passage" href="https://bible.usccb.org/bible/james/3">James 3:3–10</a><p class="prompt">Which image does James use for the power of speech? Where could a few words change a conversation this week?</p></li>
+</ol>
+<p class="plan-note">Start each meeting by reading the passage twice. Give people a moment to think before inviting an answer.</p>
+<div id="plan-actions" class="plan-actions" hidden>
+<button type="button" id="copy-plan">Copy the plan</button><button type="button" id="print-plan">Print the plan</button>
+</div>
+<p id="action-status" role="status"></p>
+<div id="manual-copy" hidden><label for="plan-text">Select and copy the plan</label><textarea id="plan-text" readonly rows="7"></textarea></div>
+<details class="app-milestones">
+<summary>Optional FORGED reading milestones</summary>
+<p>For someone who starts FORGED on the first meeting date and reads daily, these are the planned dates for three app milestones.</p>
+<div class="ms" id="milestone-dates"><div><b id="d7">—</b><span>Day 7 · Belt of Truth</span></div><div><b id="d35">—</b><span>Day 35 · Shield of Faith</span></div><div><b id="d90">—</b><span>Day 90 · Sword of the Spirit</span></div></div>
+<p id="milestone-summary"></p>
+</details>
+<section class="print-notes"><h3>Leader notes for next time</h3><p>Which question opened a conversation? What would you like to revisit?</p><div class="note-lines" aria-hidden="true"></div></section>
+<p class="print-byline">Prepared by Honest Little Apps.</p>
+</section>
+
+<section class="closing">
+<h2>Try the first day of FORGED</h2>
+<p>For personal reading between meetings, FORGED includes Day 1, Bible Basics and the glossary for free. Days 2–90 require Premium.</p>
+<a class="hla-badge" href="https://apps.apple.com/app/id6794772046?ct=faith-how-to-keep-a-mens-bible&mt=8" rel="noopener" aria-label="View FORGED on the App Store"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/white/en-us?size=250x83&releaseDate=1276560000" alt="Download on the App Store" width="150" height="50" loading="eager" decoding="async"></a>
+<p class="upd">Private by design · Progress stays on each man's phone</p>
+</section>
+
+<h2 id="screens">Inside FORGED on iPhone</h2>
 <div class="shots">
-<figure><img class="" src="/assets/forged/screen-1-390.webp" srcset="/assets/forged/screen-1-390.webp 390w, /assets/forged/screen-1-780.webp 780w" sizes="(max-width:480px) 70vw, 300px" width="390" height="844" alt="FORGED Day 1 home screen with Body, Mind and Spirit pillars and a Begin button" loading="lazy" decoding="async"><figcaption>Everyone on Day 14 sees the same Day 14.</figcaption></figure>
+<figure><img class="" src="/assets/forged/screen-1-390.webp" srcset="/assets/forged/screen-1-390.webp 390w, /assets/forged/screen-1-780.webp 780w" sizes="(max-width:480px) 70vw, 300px" width="390" height="844" alt="FORGED Day 1 home screen with Body, Mind and Spirit pillars and a Begin button" loading="lazy" decoding="async"><figcaption>Day 1 opens with Body, Mind and Spirit. Each person follows the plan on their own device.</figcaption></figure>
 <figure><img class="" src="/assets/forged/screen-3-390.webp" srcset="/assets/forged/screen-3-390.webp 390w, /assets/forged/screen-3-780.webp 780w" sizes="(max-width:480px) 70vw, 300px" width="390" height="844" alt="FORGED badges screen with Week of Iron, Scribe and Before the Sun" loading="lazy" decoding="async"><figcaption>Badges for showing up, never sold.</figcaption></figure>
 <figure><img class="" src="/assets/forged/screen-5-390.webp" srcset="/assets/forged/screen-5-390.webp 390w, /assets/forged/screen-5-780.webp 780w" sizes="(max-width:480px) 70vw, 300px" width="390" height="844" alt="FORGED premium screen: Day 1 free, Days 2 to 90 on monthly, annual or lifetime" loading="lazy" decoding="async"><figcaption>Day 1 and Bible Basics free; Days 2–90 are Premium.</figcaption></figure>
 </div>
 
-<h2 id="how">How a group runs on it, in three moves</h2>
+<h2 id="how">Using FORGED between meetings</h2>
 <ol class="steps">
-<li><strong>Everyone starts on the same date.</strong> Day 1 is free for all of them. Pick a start date; the calculator below gives you the Day 7, Day 35 and Day 90 milestones so the group has three dates to aim at.</li>
-<li><strong>Tuesday is for the week you already had.</strong> If the group used the same reading, ask which passage someone remembers and whether they tried one action. A person who missed a day can join the conversation by reading the passage here.</li>
-<li><strong>Nobody is punished for a missed Thursday.</strong> Missed days never erase what a man has earned in the app; the streak flame resets but the Bastion stones and armor milestones stay. Leave room for a person who missed a day to start again.</li>
+<li><strong>Start with Day 1.</strong> Someone who wants a personal reading routine can try the first day for free. The 90-day plan continues in Premium. The four group discussions above are free to use with any Bible.</li>
+<li><strong>Open with the last reading.</strong> If the group used the same reading, ask which passage someone remembers and whether they tried one action. A person who missed a day can join the conversation by reading the passage here.</li>
+<li><strong>Welcome someone back.</strong> A person who missed the last meeting can join by reading today’s passage. The app also keeps previously earned milestones after missed days.</li>
 </ol>
-
-<h2 id="letter">A 15-minute discussion for a quiet group</h2><div class="letter"><p>Use a Bible and a pencil. Open <a href="https://bible.usccb.org/bible/james/1">James 1:19–22</a>. Each person may speak, write, or pass.</p><h3>0–3 min · Read twice</h3><p>Read James 1:19–22 aloud. Invite everyone to listen for one action verb on the second reading. Give the room a quiet moment to find one.</p><h3>3–6 min · Ask for a word, not a speech</h3><p>Ask, “Which action did you notice?” If nobody answers, offer a choice: “What do you notice about listening, or about doing?” A single word is enough.</p><h3>6–11 min · Bring the passage into a situation</h3><p>Imagine that two people start speaking at once during a meeting. Ask, “What could someone do in the next ten seconds?” Let people think alone or discuss in pairs before inviting an answer.</p><h3>11–15 min · Choose a next step</h3><p>Invite each person to finish this sentence privately: “When ___ happens this week, I can ___.” Offer a chance to share. Close with a brief prayer if the group wishes.</p><p><strong>Next time:</strong> What happened when you tried your small action? “I forgot” is a perfectly usable answer.</p><p><a href="quiet-group-discussion-guide.pdf">Download the one-page leader guide (PDF)</a></p></div>
-
-<div class="tool" id="tool">
-<h2>Your group's 90 days</h2>
-<p>Pick a start date. The milestones match the app's: Belt of Truth at Day 7, Shield of Faith at Day 35, Sword of the Spirit at Day 90.</p>
-<label for="start" class="upd">Start date</label>
-<input type="date" id="start" aria-label="Group start date">
-<div class="ms"><div><b id="d7">–</b><span>Day 7 · Belt of Truth</span></div><div><b id="d35">–</b><span>Day 35 · Shield of Faith</span></div><div><b id="d90">–</b><span>Day 90 · Sword of the Spirit</span></div></div>
-<div class="live" id="live" aria-live="polite">–<small id="livesub">until the first milestone</small></div>
-<a class="cta" href="https://apps.apple.com/app/id6794772046?ct=faith-how-to-keep-a-mens-bible&mt=8" rel="noopener">Make it a habit with FORGED</a>
-</div>
 
 <h2 id="not-for">Who should pick something else</h2>
 <ul>
 <li>Groups that want a verse-by-verse commentary course with a teacher's guide: FORGED is a daily personal routine, not a curriculum, and the leader's job becomes hosting the conversation, not teaching.</li>
 <li>Mixed groups: it is written for men, in the voice of men. The sister apps on this site, <a href="/hla-faith/lampstep/bible-application-worksheet/">Lampstep</a> and <a href="/hla-faith/wayfold/how-to-study-the-bible-on-your-own/">Wayfold</a>, are for everyone.</li>
-<li>Men who will not pay anything: Day 1, Bible Basics, Bible Words, the What Do You Need? protocols and a daily verse are free; Days 2–90 need Premium (monthly, annual with a 14-day free trial for eligible new subscribers, or a one-time lifetime purchase). A group can start with the free week of Bible Basics and decide together.</li>
+<li>Men who will not pay anything: Day 1, Bible Basics, Bible Words, the What Do You Need? protocols and a daily verse are free; Days 2–90 need Premium (monthly, annual with a 14-day free trial for eligible new subscribers, or a one-time lifetime purchase). Bible Basics includes twelve free beginner sessions. The group can use the discussion guide above without installing anything.</li>
 <li>Anyone looking for a fitness program: the Body pillar is a practical challenge with Gentle and service options; the listing says it is a devotional routine, not medical or fitness advice.</li>
 </ul>
 
-<section class="closing">
-<h2>Give the whole group the same Day 1</h2>
-<p>Free Day 1, Bible Basics and the glossary. No account for anyone.</p>
-<a class="hla-badge" href="https://apps.apple.com/app/id6794772046?ct=faith-how-to-keep-a-mens-bible&mt=8" rel="noopener" aria-label="Download on the App Store"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/white/en-us?size=250x83&releaseDate=1276560000" alt="Download on the App Store" width="150" height="50" loading="eager" decoding="async"></a>
-<p class="upd">Private by design · Progress stays on each man's phone</p>
-</section>
+
 
 <h2>More from this site</h2>
 <!--HLA:RELATED:4-->
 </main>
 <footer class="hla-footer"><p><strong>Honest Little Apps</strong> publishes this guide and the FORGED iPhone app. No cookies, no email capture. <a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/">Faith for Real Life</a></p><p>Apple, the Apple logo, iPhone and App Store are trademarks of Apple Inc. · © <!--HLA:YEAR--> Honest Little Apps</p></footer>
 </div>
+
 <script>
-(function(){var s=document.getElementById('start'),d7=document.getElementById('d7'),d35=document.getElementById('d35'),d90=document.getElementById('d90'),live=document.getElementById('live'),sub=document.getElementById('livesub');
-var t=new Date();t.setDate(t.getDate()+((2-t.getDay()+7)%7||7));s.value=t.toISOString().slice(0,10);
-function fmt(d){return d.toLocaleDateString(undefined,{month:'short',day:'numeric'});}
-function add(d,n){var x=new Date(d);x.setDate(x.getDate()+n);return x;}
-var target=null;function calc(){var v=s.value;if(!v)return;var d=new Date(v+'T06:00:00');d7.textContent=fmt(add(d,6));d35.textContent=fmt(add(d,34));d90.textContent=fmt(add(d,89));var now=new Date();target=[add(d,6),add(d,34),add(d,89)].find(function(x){return x>now});sub.textContent=target?(target.getTime()===add(d,6).getTime()?'until Day 7, Belt of Truth':target.getTime()===add(d,34).getTime()?'until Day 35, Shield of Faith':'until Day 90, Sword of the Spirit'):'the 90 days are complete';tick();}
-function tick(){if(!target){live.firstChild.textContent='Done';return;}var ms=target-new Date();if(ms<0){calc();return;}var dd=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5),m=Math.floor(ms%36e5/6e4),sec=Math.floor(ms%6e4/1e3);live.firstChild.textContent=dd+'d '+h+'h '+m+'m '+sec+'s';}
-s.addEventListener('change',calc);calc();setInterval(tick,1000);})();
+(function () {
+  const day = 86400000;
+  const byId = (id) => document.getElementById(id);
+  const start = byId('start');
+  const frequency = byId('frequency');
+  const rows = Array.from(document.querySelectorAll('.meeting-list li'));
+  const weekdays = new Intl.DateTimeFormat(undefined, {weekday:'short', month:'short', day:'numeric', year:'numeric', timeZone:'UTC'});
+  const monthDates = new Intl.DateTimeFormat(undefined, {month:'short', day:'numeric', year:'numeric', timeZone:'UTC'});
+  const milestones = [7, 35, 90];
+
+  function localToday() {
+    const now = new Date();
+    return Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  }
+
+  function planText() {
+    const lines = rows.map((row, index) => {
+      const date = row.querySelector('.meeting-date').textContent;
+      const passage = row.querySelector('.passage').textContent;
+      const question = row.querySelector('.prompt').textContent;
+      return 'Meeting ' + (index + 1) + ' · ' + date + ' · ' + passage + '\n' + question;
+    });
+    return 'Four meetings in James\n\n' + lines.join('\n\n');
+  }
+
+  let lastSettings;
+  function render() {
+    const settings = start.value + '/' + frequency.value;
+    if (settings === lastSettings) return;
+    lastSettings = settings;
+    const first = start.valueAsNumber;
+    const valid = Number.isFinite(first) && start.validity.valid;
+    const spacing = Number(frequency.value);
+    const dateFor = (offset) => first + offset * day;
+    rows.forEach((row, index) => {
+      row.querySelector('.meeting-date').textContent = valid ? weekdays.format(dateFor(index * spacing)) : '';
+    });
+    milestones.forEach((number) => {
+      byId('d' + number).textContent = valid ? monthDates.format(dateFor(number - 1)) : '—';
+    });
+    const today = localToday();
+    const next = valid && milestones.find((number) => dateFor(number - 1) >= today);
+    byId('milestone-summary').textContent = !valid ? '' : next
+      ? 'Next planned milestone: Day ' + next + ' on ' + monthDates.format(dateFor(next - 1)) + '.'
+      : 'All three planned dates have passed. Each person’s progress is shown in their app.';
+    byId('plan-status').textContent = valid
+      ? 'Four meetings, ' + (spacing === 7 ? 'weekly' : 'every other week') + ', starting ' + weekdays.format(first) + '.'
+      : 'Choose a first meeting date to see, copy or print the dated plan.';
+    byId('copy-plan').disabled = !valid;
+    byId('print-plan').disabled = !valid;
+    byId('manual-copy').hidden = true;
+    byId('plan-text').value = '';
+    byId('action-status').textContent = '';
+    document.body.classList.remove('print-plan');
+  }
+
+  const today = localToday();
+  const nextTuesday = today + ((2 - new Date(today).getUTCDay() + 7) % 7 || 7) * day;
+  start.value = new Date(nextTuesday).toISOString().slice(0, 10);
+  byId('plan-controls').hidden = false;
+  byId('plan-actions').hidden = false;
+  start.addEventListener('input', render);
+  start.addEventListener('change', render);
+  frequency.addEventListener('change', render);
+  render();
+
+  byId('copy-plan').addEventListener('click', async () => {
+    const plan = planText();
+    const requestedSettings = lastSettings;
+    try {
+      await navigator.clipboard.writeText(plan);
+      if (lastSettings === requestedSettings) byId('action-status').textContent = 'Plan copied.';
+    } catch {
+      if (lastSettings !== requestedSettings) return;
+      const field = byId('plan-text');
+      byId('manual-copy').hidden = false;
+      field.value = plan;
+      field.focus();
+      field.select();
+      byId('action-status').textContent = 'The plan is selected. Use your device’s copy command.';
+    }
+  });
+
+  byId('print-plan').addEventListener('click', () => {
+    document.body.classList.add('print-plan');
+    window.print();
+  });
+  window.addEventListener('afterprint', () => document.body.classList.remove('print-plan'));
+})();
 </script>
 </body>
 </html>
