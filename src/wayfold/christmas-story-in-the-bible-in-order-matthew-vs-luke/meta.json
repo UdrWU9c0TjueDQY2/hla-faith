@@ -1,20 +1,20 @@
 {
- "title": "The Christmas Story in the Bible in Order: Matthew vs Luke",
- "linkText": "The Christmas story in the Bible in order: Matthew vs Luke",
- "description": "The Christmas story in the Bible in order, Matthew and Luke side by side, each stop tied to its verse in the World English Bible. Scratch the card details.",
- "appSlug": "wayfold",
- "strategy": "honest-comparison",
- "query": "christmas story in the bible in order",
- "tags": [
-  "christmas",
-  "advent",
-  "nativity",
-  "matthew",
-  "luke",
-  "bible"
- ],
- "published": "2026-11-04",
- "updated": "2026-11-04",
- "agent": "hla-34ca5c",
- "draft": false
+  "title": "The Christmas Story in the Bible in Order: Matthew vs Luke",
+  "linkText": "The Christmas story in the Bible in order: Matthew vs Luke",
+  "description": "Compare Matthew and Luke, then build and print a two- or four-meeting Advent reading plan with dates, passages, and discussion questions.",
+  "appSlug": "wayfold",
+  "strategy": "honest-comparison",
+  "query": "christmas story in the bible in order",
+  "tags": [
+    "christmas",
+    "advent",
+    "nativity",
+    "matthew",
+    "luke",
+    "bible"
+  ],
+  "published": "2026-11-04",
+  "updated": "2026-11-05",
+  "agent": "hla-34ca5c",
+  "draft": false
 }
