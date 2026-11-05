@@ -9,5 +9,18 @@ $('review').addEventListener('click',()=>{if(!built)return;revealed=false;$('edi
 $('reveal').addEventListener('click',()=>{if(!built)return;revealed=true;$('editor').hidden=false;$('copy').hidden=false;document.querySelector('label[for="copy"]').hidden=false;$('reveal').hidden=true;$('review').hidden=false;updateSave();$('result').textContent='Compare your recall with your original notes. When your reflection is ready, copy or download both parts below.';});
 $('copy-combined').addEventListener('click',async()=>{if(!built||!revealed||!$('reflection').value.trim())return;try{await navigator.clipboard.writeText(combined());$('save-status').textContent='Card and reflection copied.';}catch{$('save-status').textContent='Copy was unavailable. Use the download instead.';}});
 $('download-combined').addEventListener('click',()=>{if(!built||!revealed||!$('reflection').value.trim())return;const u=URL.createObjectURL(new Blob([combined()+'\n'],{type:'text/plain;charset=utf-8'})),a=document.createElement('a');a.href=u;a.download='sermon-review-card-and-reflection.txt';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500);$('save-status').textContent='Card and reflection downloaded to your device.';});
-$('sample').addEventListener('click',()=>{invalidate();$('reference').value='';$('takeaway').value='Fictional example: listening can be a practical form of care.';$('action').value='At dinner, let the other person finish before I reply.';$('revisit').value='Thursday after breakfast';});
+const example = {
+  takeaway: 'Fictional example: listening can be a practical form of care.',
+  action: 'At dinner, let the other person finish before I reply.',
+  revisit: 'Thursday after breakfast'
+};
+$('sample').addEventListener('click', () => {
+  const hasDraft = ['reference', 'takeaway', 'action', 'revisit', 'reflection'].some(id => $(id).value.length > 0);
+  if (hasDraft) {
+    $('result').textContent = example.takeaway + ' Action: ' + example.action + ' Revisit: ' + example.revisit + '. Your notes are still in the form.';
+    return;
+  }
+  for (const [id, value] of Object.entries(example)) $(id).value = value;
+  $('result').textContent = 'Example loaded. Build the card to try the recall exercise.';
+});
 $('reset').addEventListener('click',()=>{['reference','takeaway','action','revisit'].forEach(k=>$(k).value='');invalidate();});
