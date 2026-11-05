@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>Acts 8 reading exercise | Lampstep</title><style>
+*{box-sizing:border-box}body{margin:0;background:#faf6ed;color:#302a22;font:17px/1.5 system-ui,sans-serif}main{width:min(100% - 32px,780px);margin:24px auto 40px}h1,h2{font-family:Georgia,serif;line-height:1.12}h1{font-size:clamp(36px,6vw,58px);margin:.15em 0}h2{font-size:26px}header{border-top:5px solid #99732f}p{margin:.45em 0 .8em}a{color:#63400a}fieldset{background:#fffdf7;border:1px solid #98866a;margin:16px 0;padding:6px 12px 10px;min-width:0}legend{font-weight:650;padding:0 5px}label{display:inline-flex;align-items:center;min-height:44px;gap:.35em;margin-right:1em}input{width:17px;height:17px}button{background:#604515;color:#fff;font:inherit;padding:10px 16px;min-height:44px;border:0;cursor:pointer}button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #a24b1b;outline-offset:3px}.feedback{border-left:3px solid #98762e;padding-left:10px}.feedback:empty{display:none}footer{border-top:1px solid #98866a;padding-top:12px}details{margin:20px 0}summary{cursor:pointer;min-height:44px}li{margin:.55em 0}#out{font-weight:700}@media(max-width:400px){label{margin-right:.55em}}@page{margin:13mm}@media print{body{background:#fff;font-size:10pt}main{width:100%;margin:0}h1{font-size:26pt}fieldset{margin:8px 0}label{min-height:20px}fieldset{break-inside:avoid}.buttons,details,#out,.feedback{display:none}footer{margin-top:8px}}
+</style></head><body><main><header><p>Lampstep · Passage reading exercise</p><h1>What does Acts 8 actually tell us?</h1><p>Read <a href="https://bible.usccb.org/bible/acts/8">Acts 8:27–35</a> in your Bible. For each statement, choose <strong>Stated</strong> if the passage supplies it, <strong>Inferred</strong> if details support the interpretation, or <strong>Unanswered</strong> if you would need information outside these verses.</p></header><form id="sort"><div id="rows"></div><p class="buttons"><button type="submit">Check my reasoning</button></p><p id="out" role="status"></p></form>
+<details><summary>Read the six statements and answer guide</summary><ol id="key">
+<li data-answer="Stated"><strong>The traveller was reading Isaiah when Philip approached.</strong> Verse 30 says Philip heard him reading Isaiah.</li>
+<li data-answer="Inferred"><strong>The traveller was willing to learn from another person.</strong> In verse 31 he invites Philip to sit with him, and in verse 34 he asks a question. Those actions support this reading of his attitude.</li>
+<li data-answer="Unanswered"><strong>The traveller had discussed this passage with Philip on a previous journey.</strong> Verses 27–35 give no account of a previous meeting.</li>
+<li data-answer="Stated"><strong>The traveller asks whom the prophet is describing.</strong> In verse 34 he asks whether the prophet means himself or someone else.</li>
+<li data-answer="Unanswered"><strong>We know which language the traveller used to ask his question.</strong> The scene records the question without identifying the language spoken.</li>
+<li data-answer="Inferred"><strong>Philip connects his explanation to the traveller’s immediate question.</strong> Verse 35 says Philip began with the passage and spoke about Jesus. The connection to the question is a reading of that sequence.</li></ol></details>
+<h2>Try it on one more sentence</h2><p>Choose a sentence in the same passage. Name the verse, say what you observe, then say what you think it suggests. If you cannot give a reason for your interpretation, turn it into an open question.</p><footer><p>Original exercise by Honest Little Apps. <a href="https://udrwu9c0tjuedqy2.github.io/hla-faith/lampstep/before-you-apply-context-practice/">Return to context practice</a> or <a href="https://apps.apple.com/us/app/lampstep-bible-for-real-life/id6820775927">explore Lampstep on iPhone</a>.</p></footer></main>
+<script>
+const key=[...document.querySelectorAll('#key li')];
+const rows=document.querySelector('#rows');
+const output=document.querySelector('#out');
+for(const [i,item] of key.entries()){
+ const field=document.createElement('fieldset');
+ const legend=document.createElement('legend');
+ legend.textContent=(i+1)+'. '+item.querySelector('strong').textContent;
+ field.append(legend);
+ for(const choice of ['Stated','Inferred','Unanswered']){
+  const label=document.createElement('label'),input=document.createElement('input');
+  input.type='radio'; input.name='row'+i; input.value=choice;
+  label.append(input,choice); field.append(label);
+ }
+ const feedback=document.createElement('p'); feedback.className='feedback';field.append(feedback);
+ rows.append(field);
+}
+document.querySelector('#sort').addEventListener('change',event=>{
+ output.textContent='';
+ event.target.closest('fieldset').querySelector('.feedback').textContent='';
+});
+document.querySelector('#sort').addEventListener('submit',event=>{
+ event.preventDefault();let answered=0,matched=0;
+ for(const [i,field] of [...rows.children].entries()){
+  const selected=field.querySelector(':checked'),feedback=field.querySelector('.feedback');
+  if(!selected){feedback.textContent='Choose a reading for this statement.';continue;}
+  answered++;const item=key[i],correct=selected.value===item.dataset.answer;
+  if(correct)matched++;
+  feedback.textContent=(correct?'That fits. ':('Consider '+item.dataset.answer.toLowerCase()+'. '))+item.lastChild.textContent.trim();
+ }
+ output.textContent=answered===6?('Your readings match the guide on '+matched+' of 6 statements. Compare the reasons with the verses.'):(answered+' of 6 answered. You can return to the unanswered statements.');
+});
+</script></body></html>
