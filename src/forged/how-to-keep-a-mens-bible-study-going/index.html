@@ -92,7 +92,7 @@ h2{font-size:clamp(1.5rem,5vw,2.1rem);margin-top:2em;color:var(--ember2)}
 @media print{
   body.print-plan{background:#fff;color:#111}
   .print-plan .wrap{max-width:none;margin:0;padding:0}
-  .print-plan main>:not(#tool),.print-plan .hla-footer,.print-plan .plan-controls,.print-plan .app-milestones,.print-plan .plan-actions,.print-plan #manual-copy,.print-plan #action-status,.print-plan noscript{display:none!important}
+  .print-plan main>:not(#tool),.print-plan .hla-footer,.print-plan .plan-controls,.print-plan .app-milestones,.print-plan .plan-actions,.print-plan #manual-copy,.print-plan #calendar-copy,.print-plan #action-status,.print-plan noscript{display:none!important}
   .print-plan .tool{margin:0;padding:0;box-shadow:none;border:0;background:white}
   .print-plan .tool h2{font:700 22pt/1.12 system-ui;color:#171717;margin:0 0 8pt}
   .print-plan .tool p,.print-plan .tool a,.print-plan .meeting-date{color:#222}
@@ -149,10 +149,12 @@ h2{font-size:clamp(1.5rem,5vw,2.1rem);margin-top:2em;color:var(--ember2)}
 </ol>
 <p class="plan-note">Start each meeting by reading the passage twice. Give people a moment to think before inviting an answer.</p>
 <div id="plan-actions" class="plan-actions" hidden>
-<button type="button" id="copy-plan">Copy the plan</button><button type="button" id="print-plan">Print the plan</button>
+<button type="button" id="copy-plan">Copy the plan</button><button type="button" id="print-plan">Print the plan</button><button type="button" id="save-calendar">Save meeting dates (.ics)</button>
 </div>
-<p id="action-status" role="status"></p>
+<p id="action-status" role="status" aria-live="polite"></p>
 <div id="manual-copy" hidden><label for="plan-text">Select and copy the plan</label><textarea id="plan-text" readonly rows="7"></textarea></div>
+<div id="calendar-copy" hidden><label for="calendar-text">Complete calendar file to select if the download does not start</label><textarea id="calendar-text" readonly rows="9" spellcheck="false"></textarea></div>
+<p class="upd">Calendar files are created on this device. They contain only the four meeting dates, passages and questions shown here. They are not sent to FORGED and do not transfer into the app.</p>
 <details class="app-milestones">
 <summary>Optional FORGED reading milestones</summary>
 <p>For someone who starts FORGED on the first meeting date and reads daily, these are the planned dates for three app milestones.</p>
@@ -226,6 +228,33 @@ h2{font-size:clamp(1.5rem,5vw,2.1rem);margin-top:2em;color:var(--ember2)}
     return 'Four meetings in James\n\n' + lines.join('\n\n');
   }
 
+  function icsEscape(value) {
+    return String(value).replaceAll('\\', '\\\\').replaceAll(';', '\\;').replaceAll(',', '\\,').replaceAll('\n', '\\n');
+  }
+
+  function calendarText() {
+    const first = start.valueAsNumber;
+    const spacing = Number(frequency.value);
+    const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+    const events = rows.map((row, index) => {
+      const begin = new Date(first + index * spacing * day).toISOString().slice(0, 10).replaceAll('-', '');
+      const end = new Date(first + (index * spacing + 1) * day).toISOString().slice(0, 10).replaceAll('-', '');
+      const passage = row.querySelector('.passage').textContent;
+      const question = row.querySelector('.prompt').textContent;
+      return [
+        'BEGIN:VEVENT',
+        'UID:forged-james-' + begin + '-' + (index + 1) + '@honest-little-apps',
+        'DTSTAMP:' + stamp,
+        'DTSTART;VALUE=DATE:' + begin,
+        'DTEND;VALUE=DATE:' + end,
+        'SUMMARY:' + icsEscape("Men's Bible study · " + passage),
+        'DESCRIPTION:' + icsEscape(question),
+        'END:VEVENT'
+      ].join('\r\n');
+    });
+    return ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Honest Little Apps//FORGED four-meeting plan//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', ...events, 'END:VCALENDAR', ''].join('\r\n');
+  }
+
   let lastSettings;
   function render() {
     const settings = start.value + '/' + frequency.value;
@@ -251,8 +280,11 @@ h2{font-size:clamp(1.5rem,5vw,2.1rem);margin-top:2em;color:var(--ember2)}
       : 'Choose a first meeting date to see, copy or print the dated plan.';
     byId('copy-plan').disabled = !valid;
     byId('print-plan').disabled = !valid;
+    byId('save-calendar').disabled = !valid;
     byId('manual-copy').hidden = true;
     byId('plan-text').value = '';
+    byId('calendar-copy').hidden = true;
+    byId('calendar-text').value = '';
     byId('action-status').textContent = '';
     document.body.classList.remove('print-plan');
   }
@@ -288,6 +320,34 @@ h2{font-size:clamp(1.5rem,5vw,2.1rem);margin-top:2em;color:var(--ember2)}
     document.body.classList.add('print-plan');
     window.print();
   });
+
+  byId('save-calendar').addEventListener('click', () => {
+    const calendar = calendarText();
+    const requestedSettings = lastSettings;
+    const field = byId('calendar-text');
+    byId('calendar-copy').hidden = false;
+    field.value = calendar;
+    let url;
+    let link;
+    try {
+      url = URL.createObjectURL(new Blob([calendar], {type:'text/calendar;charset=utf-8'}));
+      link = document.createElement('a');
+      link.href = url;
+      link.download = 'forged-four-meetings-in-james.ics';
+      document.body.append(link);
+      link.click();
+      if (lastSettings === requestedSettings) byId('action-status').textContent = 'Calendar file prepared. If it did not download, select the complete file below.';
+    } catch (_) {
+      if (lastSettings !== requestedSettings) return;
+      field.focus();
+      field.select();
+      byId('action-status').textContent = 'The calendar file could not be started. Select the complete file below.';
+    } finally {
+      link?.remove();
+      if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+  });
+
   window.addEventListener('afterprint', () => document.body.classList.remove('print-plan'));
 })();
 </script>
