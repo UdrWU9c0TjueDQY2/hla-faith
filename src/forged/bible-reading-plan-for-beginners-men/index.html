@@ -59,6 +59,15 @@ details{border-top:1px solid var(--line);padding:12px 0}summary{cursor:pointer;f
 .hla-footer{margin-top:50px;padding:24px 0 40px;border-top:1px solid var(--line);color:var(--mute);font-size:.88rem}.hla-footer a{color:inherit}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
+<style>
+[data-hla-apple-event][hidden]{display:none!important}
+.hla-apple-event-note{margin:1rem 0;padding:.3rem 0 .3rem .85rem;border-inline-start:3px solid currentColor;max-width:52ch;text-align:left}
+.hla-apple-event-note strong{display:block;font-size:1rem}
+.hla-apple-event-note p{margin:.25rem 0;color:inherit}
+.hla-apple-event-note a{display:inline-block;color:inherit;text-decoration:underline;text-underline-offset:.16em;padding:.35rem 0;font-weight:650}
+.hla-apple-event-note a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+@media print{.hla-apple-event-note{display:none!important}}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -120,6 +129,11 @@ details{border-top:1px solid var(--line);padding:12px 0}summary{cursor:pointer;f
 <h2>Begin today's forge</h2>
 <p>Day 1, Bible Basics and the Bible glossary are free. No account.</p>
 <a class="hla-badge" href="https://apps.apple.com/us/app/forged-daily-bible-for-men/id6794772046" rel="noopener" aria-label="Download on the App Store"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/white/en-us?size=250x83&releaseDate=1276560000" alt="Download on the App Store" width="150" height="50" loading="eager" decoding="async"></a>
+<aside class="hla-apple-event-note" aria-label="Optional November App Store event" data-hla-apple-event data-starts="2026-11-01T04:00:00.000Z" data-ends="2026-12-01T04:30:00.000Z" hidden>
+<strong>November in-app event</strong>
+<p>The November event introduces the app’s 90-day plan with a passage, a practical challenge and time for prayer.</p>
+<a href="https://apps.apple.com/us/app/forged-daily-bible-for-men/id6794772046?eventid=6827719584">90-Day Bible Challenge for Men on the US App Store</a>
+</aside>
 <p class="upd">A devotional routine, not medical or fitness advice</p>
 </section>
 
@@ -139,6 +153,7 @@ c.addEventListener('pointerdown',function(e){down=true;rub(e);});c.addEventListe
 c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){done=true;c.remove();}});
 document.getElementById('reveal-day').addEventListener('click',function(){done=true;c.remove();});window.addEventListener('resize',size);size();})();
 </script>
+<script src="../../assets/hla-apple-event-v1.js" defer></script>
 </body>
 </html>
 
