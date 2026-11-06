@@ -58,6 +58,17 @@
     get('finish').focus();
   });
   get('restart').addEventListener('click',()=>{trip=0;shortest=0;get('work').hidden=false;get('summary').hidden=true;start(true)});
+  const printButton = document.querySelector('[data-print-sheet]');
+  const printStatus = document.querySelector('[data-print-status]');
+  if (printButton && printStatus) {
+    printButton.addEventListener('click', () => {
+      printStatus.textContent = 'Opening the print dialog for the practice sheet and answer key.';
+      window.print();
+      window.setTimeout(() => {
+        printStatus.textContent = 'Prints two pages. The answer key starts on page two.';
+      }, 500);
+    });
+  }
   get('work').hidden=false;
   start(false);
 })();
