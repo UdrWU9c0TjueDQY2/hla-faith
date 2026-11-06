@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Read or Study Session Chooser — Wayfold</title>
+  <meta name="description" content="Choose a short Bible reading or study session and take away a complete outline.">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://udrwu9c0tjuedqy2.github.io/hla-faith/wayfold/bible-reading-vs-study/">
+  <style>
+    :root{color-scheme:dark;--navy:#101b2d;--panel:#182840;--ivory:#fff8e8;--gold:#e6be68;--muted:#cbd3df;--line:#49627f}*{box-sizing:border-box}body{margin:0;background:var(--navy);color:var(--ivory);font:16px/1.55 ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:680px;margin:auto;padding:22px}h1,h2,h3{font-family:Georgia,serif;line-height:1.12}h1{font-size:clamp(30px,7vw,46px);margin:8px 0 12px}h2{font-size:25px;margin:0 0 8px}.eyebrow{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}.intro,.note{color:var(--muted)}.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0}.choices button,.actions button,.store{min-height:48px;border:1px solid var(--gold);border-radius:10px;padding:12px 14px;font:inherit;font-weight:700}.choices button,.actions button{background:transparent;color:var(--ivory);cursor:pointer}.choices button[aria-pressed="true"]{background:var(--gold);color:#172031}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px}.steps{padding-left:22px}.steps li{margin:18px 0}.steps strong{display:block;color:var(--gold)}.steps span{display:block;font-size:14px;color:var(--muted);margin-top:3px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.actions button{flex:1 1 160px}.manual{width:100%;min-height:170px;margin-top:12px;background:#0c1626;color:var(--ivory);border:1px solid var(--line);border-radius:8px;padding:12px;font:14px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace}.status{min-height:1.5em;color:var(--gold);font-weight:700}.store{display:block;background:var(--gold);color:#172031;text-align:center;text-decoration:none;margin-top:20px}.credit{text-align:center;color:var(--muted);font-size:13px;margin:18px 0 0}.credit a{color:var(--ivory)}button:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid white;outline-offset:3px}@media(max-width:430px){main{padding:16px}.choices{grid-template-columns:1fr}.card{padding:16px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Free session chooser · Honest Little Apps</p>
+  <h1>Read for the flow. Study for the details.</h1>
+  <p class="intro">Choose a flexible starting structure. Bring a Bible in the translation you normally use. This tool saves nothing and sends no entries anywhere.</p>
+  <div class="choices" role="group" aria-label="Choose a session type">
+    <button type="button" data-mode="read" aria-pressed="true">Read · about 5 minutes</button>
+    <button type="button" data-mode="study" aria-pressed="false">Study · about 15 minutes</button>
+  </div>
+  <section class="card" aria-labelledby="plan-title">
+    <h2 id="plan-title">Keep the passage moving.</h2>
+    <p class="note" id="plan-note"></p>
+    <ol class="steps" id="steps"></ol>
+    <div class="actions">
+      <button type="button" id="copy">Copy complete outline</button>
+      <button type="button" id="reset">Reset to reading</button>
+    </div>
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+    <textarea class="manual" id="manual" readonly hidden aria-label="Complete session outline for manual copying"></textarea>
+  </section>
+  <a class="store" href="https://apps.apple.com/us/app/wayfold-understand-the-bible/id6820304462?ct=faith-session-embed&amp;mt=8" target="_blank" rel="noopener">Continue with Wayfold in the App Store</a>
+  <p class="credit">Wayfold and this free companion are published by <a href="https://udrwu9c0tjuedqy2.github.io/hla-faith/wayfold/bible-reading-vs-study/" target="_blank" rel="noopener">Honest Little Apps</a>. Ruth and Jonah studies are free; see the current App Store listing for the full offer.</p>
+</main>
+<script>
+'use strict';
+const sessions={read:{title:'Keep the passage moving.',note:'A bookmark or scrap of paper is enough. Stop and return later if the passage needs more time.',steps:[['Before you begin','Choose a passage','Continue where you left off, or choose a short passage you can return to.'],['About 3 minutes','Read at your own pace','Follow the passage. If you need more time, take it or mark where you stop.'],['About 1 minute','Name one observation','Write one thing you noticed. Keep it close to the words you read.'],['About 1 minute','Leave a question','Write something you want to revisit, then mark your next starting point.']]},study:{title:'Follow one question carefully.',note:'The goal is a careful beginning, not a finished answer. Keep uncertainty visible.',steps:[['About 4 minutes','Read and reread','Read the passage and enough surrounding text to orient yourself.'],['About 4 minutes','Observe before explaining','Write what you can point to in the text. Keep assumptions in a separate question.'],['About 5 minutes','Investigate one question','Check the surrounding passage and, where useful, a trusted resource. Note any uncertainty.'],['About 2 minutes','Record a next step','Summarize what you noticed and what remains open. Choose where to return.']]}};
+let mode='read';
+const byId=id=>document.getElementById(id);
+function outline(){const data=sessions[mode];return [mode==='read'?'Bible reading session · about 5 minutes':'Bible study session · about 15 minutes',data.title,data.note,'',...data.steps.map(([time,title,body],i)=>`${i+1}. ${title} (${time})\n${body}`),'','Private notes: ______________________________','Next starting point: _________________________','',`Prepared with the free Wayfold companion: ${location.href}`].join('\n');}
+function render(next){mode=next;const data=sessions[mode];byId('plan-title').textContent=data.title;byId('plan-note').textContent=data.note;byId('steps').replaceChildren(...data.steps.map(([time,title,body])=>{const li=document.createElement('li'),strong=document.createElement('strong'),span=document.createElement('span');strong.textContent=`${title} · ${time}`;span.textContent=body;li.append(strong,span);return li;}));document.querySelectorAll('[data-mode]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.mode===mode)));byId('status').textContent='';byId('manual').hidden=true;byId('manual').value='';}
+function manualFallback(message){const field=byId('manual');field.value=outline();field.hidden=false;field.focus();field.select();byId('status').textContent=message;}
+document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>render(button.dataset.mode)));
+byId('copy').addEventListener('click',async()=>{try{if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');await navigator.clipboard.writeText(outline());byId('manual').hidden=true;byId('status').textContent='Complete outline copied.';}catch{manualFallback('Copy was unavailable. The complete outline is selected below for manual copying.');}});
+byId('reset').addEventListener('click',()=>{render('read');byId('status').textContent='Reset to the reading session.';document.querySelector('[data-mode="read"]').focus();});
+render('read');
+</script>
+</body>
+</html>
