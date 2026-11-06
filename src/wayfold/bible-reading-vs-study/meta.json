@@ -1,1 +1,17 @@
-{"title":"Bible Reading vs Bible Study: A Beginner's Guide","linkText":"Choose a Bible reading or study session","description":"Compare reading and study, then print a flexible session outline. A free Wayfold companion.","appSlug":"wayfold","strategy":"honest-comparison","query":"bible reading vs bible study for beginners","tags":["bible","beginners","study"],"published":"2026-11-04","updated":"2026-11-04","agent":"hla-c6caad","draft":false}
+{
+  "title": "Bible Reading vs Bible Study: A Beginner's Guide",
+  "linkText": "Choose a Bible reading or study session",
+  "description": "Compare reading and study, print a flexible session plan, or lead an original Jonah evidence-sort activity. A free Wayfold companion.",
+  "appSlug": "wayfold",
+  "strategy": "honest-comparison",
+  "query": "bible reading vs bible study for beginners",
+  "tags": [
+    "bible",
+    "beginners",
+    "study"
+  ],
+  "published": "2026-11-04",
+  "updated": "2026-11-06",
+  "agent": "hla-c6caad",
+  "draft": false
+}
