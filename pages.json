@@ -1,0 +1,502 @@
+[
+ {
+  "title": "Scripture discussion cards | Honest Little Apps",
+  "description": "Five short Bible-reading and reflection activities. Original exercises with copy and print controls.",
+  "appSlug": "portfolio",
+  "strategy": "independent-activity-collection",
+  "query": "scripture discussion cards",
+  "tags": [
+   "original activity",
+   "printable",
+   "faith"
+  ],
+  "path": "/activities/practical-try-it-cards/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/activities/practical-try-it-cards/",
+  "published": "2026-11-06",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "Faith for Real Life: Mini-Challenges with Worked Answers",
+  "description": "Choose a free challenge collection, compare answer choices and read the worked explanation. Original companion activities from Honest Little Apps.",
+  "appSlug": "resources",
+  "strategy": "challenge-collection-index",
+  "query": "faith for real life practice questions",
+  "tags": [
+   "mini challenges"
+  ],
+  "path": "/activities/scenario-challenges/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/activities/scenario-challenges/",
+  "published": "2026-11-06",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "27 Everyday Integrity Decisions",
+  "description": "Work through practical choices about commitments, service, responsibility, and attention; answers follow each scenario's stated goal.",
+  "appSlug": "forged",
+  "strategy": "worked-scenario-quiz",
+  "query": "practical Christian reflection scenarios",
+  "tags": [
+   "worked examples",
+   "mini challenges",
+   "forged"
+  ],
+  "path": "/forged/scenario-challenges/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/forged/scenario-challenges/",
+  "published": "2026-11-06",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "27 Practical Reflection Decision Cases",
+  "description": "Consider everyday community choices with explicit goals, realistic limits, and explained best-fit responses.",
+  "appSlug": "lampstep",
+  "strategy": "worked-scenario-quiz",
+  "query": "practical devotional scenarios",
+  "tags": [
+   "worked examples",
+   "mini challenges",
+   "lampstep"
+  ],
+  "path": "/lampstep/scenario-challenges/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/lampstep/scenario-challenges/",
+  "published": "2026-11-06",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "27 Virtue Reflection Situations",
+  "description": "Explore practical choices through nine fruit-of-the-Spirit themes; each answer fits the scenario, not a spiritual score.",
+  "appSlug": "ninefruit",
+  "strategy": "worked-scenario-quiz",
+  "query": "fruit of the Spirit scenario questions",
+  "tags": [
+   "worked examples",
+   "mini challenges",
+   "ninefruit"
+  ],
+  "path": "/ninefruit/scenario-challenges/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/ninefruit/scenario-challenges/",
+  "published": "2026-11-06",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "27 Reading-Game Mini Challenges",
+  "description": "Practice skills useful in Bible study through clearly invented text puzzles, fair quiz rules, and explained answers.",
+  "appSlug": "scrollway",
+  "strategy": "worked-scenario-quiz",
+  "query": "Bible study reading games",
+  "tags": [
+   "worked examples",
+   "mini challenges",
+   "scrollway"
+  ],
+  "path": "/scrollway/scenario-challenges/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/scrollway/scenario-challenges/",
+  "published": "2026-11-06",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "27 Context and Evidence Reading Questions",
+  "description": "Practice distinguishing observation, inference, genre, and context through worked reading scenarios.",
+  "appSlug": "wayfold",
+  "strategy": "worked-scenario-quiz",
+  "query": "Bible context reasoning questions",
+  "tags": [
+   "worked examples",
+   "mini challenges",
+   "wayfold"
+  ],
+  "path": "/wayfold/scenario-challenges/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/wayfold/scenario-challenges/",
+  "published": "2026-11-06",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "Four Gospels in Order: Bible Book Navigation Practice | Scrollway",
+  "description": "Take five untimed trips between Matthew, Mark, Luke, John and Acts, and check the shortest route to each target book.",
+  "appSlug": "scrollway",
+  "strategy": "interactive-bible-navigation",
+  "query": "four gospels in order practice",
+  "tags": [
+   "Gospels",
+   "Bible books",
+   "navigation"
+  ],
+  "path": "/scrollway/gospel-book-navigation/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/scrollway/gospel-book-navigation/",
+  "published": "2026-11-05",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "Road to Emmaus sequence activity | Scrollway",
+  "description": "Put six scenes from Luke 24:13–35 in order, check the verse references and discuss the turning point.",
+  "appSlug": "scrollway",
+  "strategy": "bible-learning-game",
+  "query": "road to Emmaus sequence activity",
+  "tags": [
+   "Bible study",
+   "Luke 24",
+   "Bible learning game"
+  ],
+  "path": "/scrollway/road-to-emmaus/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/scrollway/road-to-emmaus/",
+  "published": "2026-11-05",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "Bible Reading Plan for Beginners (Men): 14 Answers | FORGED",
+  "description": "Preview the three parts of FORGED’s first day, check what is free, and find a starting passage. Includes answers to 14 beginner Bible-reading questions.",
+  "appSlug": "forged",
+  "strategy": "faq-hub",
+  "query": "bible reading plan for beginners men",
+  "tags": [
+   "bible-plan",
+   "beginners",
+   "men",
+   "daily-habit"
+  ],
+  "path": "/forged/bible-reading-plan-for-beginners-men/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/forged/bible-reading-plan-for-beginners-men/",
+  "published": "2026-11-04",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "How to Keep a Men's Bible Study Going | FORGED",
+  "description": "Lead a 15-minute men’s Bible study on James, then print four weekly or every-other-week meetings with a passage and a question for each date.",
+  "appSlug": "forged",
+  "strategy": "group-discussion-guide",
+  "query": "how to keep a men's bible study going",
+  "tags": [
+   "mens-group",
+   "bible-study",
+   "leaders",
+   "habit"
+  ],
+  "path": "/forged/how-to-keep-a-mens-bible-study-going/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/forged/how-to-keep-a-mens-bible-study-going/",
+  "published": "2026-11-04",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "Free Scripture Memory Tool: Hide Words, Keep First Letters",
+  "description": "Practice a chosen Bible passage with four recall modes, then download a personal offline practice sheet with prompts and a review note.",
+  "appSlug": "forged",
+  "strategy": "interactive-tool",
+  "query": "scripture memory tool first letters hide words",
+  "tags": [],
+  "path": "/forged/scripture-memory-ladder/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/forged/scripture-memory-ladder/",
+  "published": "2026-11-04",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "Sermon Follow-Through Card: Remember, Act and Revisit",
+  "description": "Turn a sermon takeaway into a personal review card. Keep the passage separate from your summary, choose an action, then hide and recall your notes.",
+  "appSlug": "forged",
+  "strategy": "interactive-tool",
+  "query": "sermon notes follow through review card",
+  "tags": [
+   "sermon-notes",
+   "reflection",
+   "faith"
+  ],
+  "path": "/forged/sermon-follow-through-card/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/forged/sermon-follow-through-card/",
+  "published": "2026-11-04",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "Before Applying a Bible Verse: Six Context Reading Exercises",
+  "description": "Practise spotting speaker, audience, conditions, genre and missing context with six original short reading exercises, then use a simple Bible reading checklist.",
+  "appSlug": "lampstep",
+  "strategy": "interactive-tool",
+  "query": "how to read Bible verses in context practice",
+  "tags": [
+   "bible-study",
+   "context",
+   "reading",
+   "practice"
+  ],
+  "path": "/lampstep/before-you-apply-context-practice/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/lampstep/before-you-apply-context-practice/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "Bible application worksheet: from passage to practice",
+  "description": "Separate observation, interpretation and a practical response with three worked examples and a printable blank worksheet.",
+  "appSlug": "lampstep",
+  "strategy": "practical-resource",
+  "query": "Bible application worksheet",
+  "tags": [
+   "bible",
+   "worksheet",
+   "application"
+  ],
+  "path": "/lampstep/bible-application-worksheet/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/lampstep/bible-application-worksheet/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "Reflective Listening Practice: 5 Everyday Examples with Feedback",
+  "description": "Practice listening before offering advice in five original everyday conversations. Choose a response, see why it fits or misses the point, and keep a simple listening prompt.",
+  "appSlug": "lampstep",
+  "strategy": "interactive-tool",
+  "query": "reflective listening practice examples with answers",
+  "tags": [],
+  "path": "/lampstep/listen-before-advice-practice/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/lampstep/listen-before-advice-practice/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "Bible Verse Memory Practice — Words & Kindness, Six Free Cards",
+  "description": "Practise six missing words from Ephesians 4 with hints, answer reveals and an honest recap. Free World English Bible memory cards with chapter context.",
+  "appSlug": "lampstep",
+  "strategy": "interactive-tool",
+  "query": "Bible verse memory practice missing words Ephesians kindness",
+  "tags": [
+   "bible",
+   "memory",
+   "verse-practice",
+   "ephesians"
+  ],
+  "path": "/lampstep/words-and-kindness-memory-cards/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/lampstep/words-and-kindness-memory-cards/",
+  "published": "2026-11-04",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "Fruit of the Spirit at Work: 9 Reflection Cards | Ninefruit",
+  "description": "Nine original workplace reflection cards for meetings, messages and shared tasks, with optional response examples and a small-group discussion guide.",
+  "appSlug": "ninefruit",
+  "strategy": "original_practical_guide",
+  "query": "fruit of the Spirit at work",
+  "tags": [
+   "Christian workplace reflection",
+   "fruit of the Spirit examples",
+   "small group discussion"
+  ],
+  "path": "/ninefruit/fruit-of-the-spirit-at-work/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/ninefruit/fruit-of-the-spirit-at-work/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "Keep or Renegotiate a Promise: Six Everyday Practice Scenarios",
+  "description": "Explore six realistic promise dilemmas, compare possible responses and write one smaller commitment. A free practice companion without a faith score.",
+  "appSlug": "ninefruit",
+  "strategy": "interactive-tool",
+  "query": "keeping promises Christian faithfulness practical examples",
+  "tags": [
+   "faithfulness",
+   "promises",
+   "practice"
+  ],
+  "path": "/ninefruit/keep-or-renegotiate-a-promise/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/ninefruit/keep-or-renegotiate-a-promise/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "Acts of Kindness That Cost Nothing: Free Action Cards",
+  "description": "Find one practical kindness for home, shared spaces or online. Eighteen ideas with a copyable personal cue.",
+  "appSlug": "ninefruit",
+  "strategy": "interactive-action-deck",
+  "query": "acts of kindness that cost nothing",
+  "tags": [
+   "kindness",
+   "practice",
+   "faith"
+  ],
+  "path": "/ninefruit/kindness-without-spending/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/ninefruit/kindness-without-spending/",
+  "published": "2026-11-04",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "Patience as a Fruit of the Spirit: Six Everyday Practice Cards",
+  "description": "Explore six ordinary moments that test patience. Each original card offers a pause, a possible sentence and a practical next step—without a faith score.",
+  "appSlug": "ninefruit",
+  "strategy": "interactive tool with specific search intent and verified feature bridge",
+  "query": "Patience as a Fruit of the Spirit: Six Everyday Practice Cards",
+  "tags": [
+   "ninefruit",
+   "patience",
+   "free tool"
+  ],
+  "path": "/ninefruit/patience-in-everyday-moments/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/ninefruit/patience-in-everyday-moments/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "Bible Genre Reading Guide: Questions for Six Literary Forms",
+  "description": "Choose narrative, poetry, wisdom, law, letters or apocalyptic writing. Get concrete reading questions, a caution and a next step for studying the passage in context.",
+  "appSlug": "wayfold",
+  "strategy": "interactive tool with specific search intent and verified feature bridge",
+  "query": "Bible Genre Reading Guide: Questions for Six Literary Forms",
+  "tags": [
+   "wayfold",
+   "genre",
+   "free tool"
+  ],
+  "path": "/wayfold/bible-genre-reading-guide/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/wayfold/bible-genre-reading-guide/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "Bible Reading vs Bible Study: A Beginner's Guide",
+  "description": "Compare reading and study, print a flexible session plan, or lead an original Jonah evidence-sort activity. A free Wayfold companion.",
+  "appSlug": "wayfold",
+  "strategy": "honest-comparison",
+  "query": "bible reading vs bible study for beginners",
+  "tags": [
+   "bible",
+   "beginners",
+   "study"
+  ],
+  "path": "/wayfold/bible-reading-vs-study/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/wayfold/bible-reading-vs-study/",
+  "published": "2026-11-04",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "How to Read Bible References: 6 Free Practice Exercises",
+  "description": "Learn book, chapter and verse notation with six interactive Bible-reference exercises. Practice numbered books and verse ranges, with clear answers and no timer.",
+  "appSlug": "wayfold",
+  "strategy": "interactive-tool",
+  "query": "how to read Bible references book chapter verse practice",
+  "tags": [],
+  "path": "/wayfold/bible-reference-practice/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/wayfold/bible-reference-practice/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "6 Bible Study Apps Without a Subscription (Checked Nov 2026)",
+  "description": "Six Bible study apps you can use without a subscription, checked against their App Store listings this month. Our own app is in the list and labelled.",
+  "appSlug": "wayfold",
+  "strategy": "honest-comparison",
+  "query": "bible study apps without subscription",
+  "tags": [
+   "bible-study",
+   "apps",
+   "comparison",
+   "no-subscription",
+   "small-group"
+  ],
+  "path": "/wayfold/bible-study-apps-without-subscription/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/wayfold/bible-study-apps-without-subscription/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "The Christmas Story in the Bible in Order: Matthew vs Luke",
+  "description": "Compare Matthew and Luke, then build and print a two- or four-meeting Advent reading plan with dates, passages, and discussion questions.",
+  "appSlug": "wayfold",
+  "strategy": "honest-comparison",
+  "query": "christmas story in the bible in order",
+  "tags": [
+   "christmas",
+   "advent",
+   "nativity",
+   "matthew",
+   "luke",
+   "bible"
+  ],
+  "path": "/wayfold/christmas-story-in-the-bible-in-order-matthew-vs-luke/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/wayfold/christmas-story-in-the-bible-in-order-matthew-vs-luke/",
+  "published": "2026-11-04",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "Observation vs Inference Practice: What Does the Text Actually Say?",
+  "description": "Practice observation and inference with six explained examples, then test three claims against Ruth 2. Includes a free printable worksheet and small-group leader notes.",
+  "appSlug": "wayfold",
+  "strategy": "interactive-tool",
+  "query": "observation vs inference reading practice",
+  "tags": [
+   "reading",
+   "evidence",
+   "bible-study"
+  ],
+  "path": "/wayfold/observation-inference-practice/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/wayfold/observation-inference-practice/",
+  "published": "2026-11-04",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "A Christian Alternative to 75 Hard: 90 Days, 10 Minutes",
+  "description": "A Christian alternative to 75 Hard, compared honestly: 75 Hard vs 75 Soft vs a 90-day, 10-minute Bible plan for men, with a 3-question quiz to pick yours.",
+  "appSlug": "forged",
+  "strategy": "method-vs-method",
+  "query": "christian alternative to 75 hard",
+  "tags": [
+   "faith",
+   "men",
+   "challenge",
+   "75-hard",
+   "discipline"
+  ],
+  "path": "/forged/christian-alternative-to-75-hard/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/forged/christian-alternative-to-75-hard/",
+  "published": "2026-11-03",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "Bible Verses for Difficult Family Members: Thanksgiving Prep",
+  "description": "Bible verses for difficult family members, matched to the Thanksgiving moment you dread: the politics uncle, the kids question, the empty chair.",
+  "appSlug": "lampstep",
+  "strategy": "seasonal",
+  "query": "bible verses for difficult family members",
+  "tags": [
+   "bible-verses",
+   "thanksgiving",
+   "family",
+   "conflict",
+   "devotional"
+  ],
+  "path": "/lampstep/bible-verses-difficult-family-thanksgiving/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/lampstep/bible-verses-difficult-family-thanksgiving/",
+  "published": "2026-11-03",
+  "updated": "2026-11-03"
+ },
+ {
+  "title": "Fruit of the Spirit Family Devotional: 24 Days to Christmas",
+  "description": "Start with a printable activity for November 29 and 30, then use 24 daily family reflections from December 1 through Christmas Eve.",
+  "appSlug": "ninefruit",
+  "strategy": "visual-step-guide",
+  "query": "fruit of the spirit family devotional",
+  "tags": [
+   "fruit-of-the-spirit",
+   "advent",
+   "family",
+   "devotional",
+   "kids"
+  ],
+  "path": "/ninefruit/fruit-of-the-spirit-family-devotional-advent/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/ninefruit/fruit-of-the-spirit-family-devotional-advent/",
+  "published": "2026-11-03",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "How to Study the Bible on Your Own (A Quiz, Then a Plan)",
+  "description": "How to study the Bible on your own without getting lost: a five-question quiz finds where you stall, then a first book, a method and a 7-day checklist.",
+  "appSlug": "wayfold",
+  "strategy": "quiz-funnel",
+  "query": "how to study the bible on your own",
+  "tags": [
+   "bible-study",
+   "beginners",
+   "quiz",
+   "ruth",
+   "jonah",
+   "small-group"
+  ],
+  "path": "/wayfold/how-to-study-the-bible-on-your-own/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-faith/wayfold/how-to-study-the-bible-on-your-own/",
+  "published": "2026-11-03",
+  "updated": "2026-11-03"
+ }
+]

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>Who is speaking in the Good Samaritan? | Wayfold</title><meta name="description" content="Map the speakers and listeners in Luke 10:25–37, including the conversation inside the parable. Check six verse references and explanations."><link rel="canonical" href="https://udrwu9c0tjuedqy2.github.io/hla-faith/wayfold/bible-genre-reading-guide/who-is-speaking.html">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f0e6;color:#282b28;font:17px/1.55 system-ui,sans-serif}main{max-width:880px;margin:auto;padding:24px clamp(16px,5vw,56px) 52px}a{color:#31563c;text-underline-offset:3px}h1,h2{font-family:Georgia,serif}h1{font-size:clamp(2.6rem,8vw,4.6rem);line-height:1;letter-spacing:-.055em;max-width:17ch;margin:1.6rem 0 1rem}header p{max-width:64ch}.moment{border-top:2px solid #a5ad9a;background:#fffcf5;padding:clamp(14px,3vw,22px);margin:1rem 0}.moment h2{margin:0;font-size:1.22rem;color:#435c44}.moment p{margin:.5rem 0 .9rem}.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.pair label{font-weight:700;font-size:.9rem}.pair select{display:block;width:100%;font:inherit;color:inherit;background:white;border:1px solid #819181;border-radius:5px;padding:.5rem;min-height:44px}.reply{border-left:3px solid #627e64;padding-left:.7rem}.actions{display:flex;flex-wrap:wrap;gap:10px}button,.store{min-height:44px;padding:.65rem 1rem;background:#31583e;color:white;border:1px solid #31583e;border-radius:5px;font:650 1rem system-ui;cursor:pointer}.secondary{color:#31583e;background:transparent}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #bd602a;outline-offset:3px}#summary{font-weight:700;margin:1rem 0}.store{display:inline-block;text-decoration:none}footer{margin-top:2rem}.fine{font-size:.88rem}@media(max-width:450px){.pair{grid-template-columns:1fr}}[hidden]{display:none!important}
+</style></head><body><main><a href="./">← Bible genre reading guide</a><header><h1>Who is speaking in the Good Samaritan?</h1><p>Jesus tells a story during a conversation. At one point, a character in his story gives an instruction of his own. Follow the change of voice by choosing who speaks and who hears each line.</p><p>Read <a href="https://bible.usccb.org/bible/luke/10">Luke 10:25–37</a> alongside the exercise. The descriptions below are paraphrases.</p></header>
+<div id="moments"></div><div class="actions"><button id="check">Check my pairs</button><button id="key" class="secondary">Show answer key</button><button id="reset" class="secondary">Start again</button></div><p id="summary" tabindex="-1" role="status"></p><noscript>Read verse 35 and verse 36 together. In verse 35 the Samaritan addresses the innkeeper inside the story. In verse 36 Jesus addresses the legal expert outside the story.</noscript>
+<footer><h2>Try this with another passage</h2><p>Mark where a speaker starts telling a story, who speaks inside it, and where the original conversation resumes. Wayfold offers guided Bible studies and tools for group discussion.</p><a class="store" href="https://apps.apple.com/us/app/wayfold-understand-the-bible/id6820304462">View Wayfold on the App Store</a><p class="fine">An original browser exercise from Honest Little Apps.</p></footer>
+<script>
+const roles=['Jesus','The legal expert','The Samaritan','The innkeeper','The injured traveler'];
+const scenes=[
+ {verse:'10:25',text:'Someone asks what he must do to inherit eternal life.',speaker:1,listener:0,reason:'The legal expert opens the exchange by putting a question to Jesus.'},
+ {verse:'10:26',text:'Someone answers with a question about how the law reads.',speaker:0,listener:1,reason:'Jesus invites the legal expert to interpret the law.'},
+ {verse:'10:29',text:'Someone asks for a definition of his neighbor.',speaker:1,listener:0,reason:'The legal expert asks this follow-up before the parable begins.'},
+ {verse:'10:35',text:'Someone asks another person to care for the injured traveler and promises to cover additional expenses.',speaker:2,listener:3,reason:'Jesus is telling the parable, but this instruction comes from the Samaritan and is addressed to the innkeeper.'},
+ {verse:'10:36',text:'Someone asks which of the three people acted as a neighbor.',speaker:0,listener:1,reason:'Jesus has returned to the conversation with the legal expert.'},
+ {verse:'10:37, first reply',text:'Someone identifies the neighbor by the mercy he showed.',speaker:1,listener:0,reason:'The legal expert answers Jesus. Jesus speaks again after this reply.'}
+];
+const el=id=>document.getElementById(id);
+function picker(title,index){
+ const label=document.createElement('label'),select=document.createElement('select');label.textContent=title;
+ select.id=title.toLowerCase()+index;select.add(new Option('Choose a person',''));
+ roles.forEach((role,i)=>select.add(new Option(role,String(i))));label.append(select);return label;
+}
+scenes.forEach((s,i)=>{
+ const article=document.createElement('article'),head=document.createElement('h2'),p=document.createElement('p'),pair=document.createElement('div'),note=document.createElement('p');
+ article.className='moment';head.textContent='Luke '+s.verse;p.textContent=s.text;pair.className='pair';pair.append(picker('Speaker',i),picker('Listener',i));
+ note.id='note'+i;note.className='reply';note.hidden=true;article.append(head,p,pair,note);el('moments').append(article);
+});
+function clearFeedback(){el('summary').textContent='';scenes.forEach((_,i)=>{el('note'+i).hidden=true;});}
+el('moments').addEventListener('change',clearFeedback);
+function check(key){
+ let complete=0,correct=0;
+ scenes.forEach((s,i)=>{
+  const a=el('speaker'+i).value,b=el('listener'+i).value,note=el('note'+i);
+  if(a!==''&&b!=='')complete++;
+  const match=a===String(s.speaker)&&b===String(s.listener);if(match)correct++;
+  if(key||match){note.textContent=(key?'Answer: ':'Correct: ')+roles[s.speaker]+' → '+roles[s.listener]+'. '+s.reason;}
+  else note.textContent=a===''||b===''?'Choose both people for this verse.':'Read this verse again. Check whether the words are part of the story or the conversation around it.';
+  note.hidden=false;
+ });
+ el('summary').textContent=key?'Answer key shown for all six moments.':correct+' correct pairs out of 6; '+complete+' pairs completed.';
+ el('summary').focus();
+}
+el('check').onclick=()=>check(false);el('key').onclick=()=>check(true);
+el('reset').onclick=()=>{document.querySelectorAll('.pair select').forEach(s=>s.value='');clearFeedback();el('speaker0').focus();};
+</script></main></body></html>
