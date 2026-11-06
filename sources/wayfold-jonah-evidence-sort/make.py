@@ -15,7 +15,7 @@ cards=[
  ('C','Jonah is pleased about the plant that provides shade.','Supports','Jonah 4:6',"The narrative reports Jonah's gladness because of the plant."),
  ('D','Jonah grew the plant himself.','Conflicts','Jonah 4:10',"God says Jonah did not work for the plant or make it grow."),
  ('E','The final question refers to animals as well as people.','Supports','Jonah 4:11',"The question names the people of Nineveh and its many animals."),
- ('F','The chapter reports that Jonah changes his mind after the final question.','Leaves open','Jonah 4:11 / end of the book',"The book ends with the question. It does not report a reply or a later change of mind.")
+ ('F','Jonah changes his mind after the final question.','Leaves open','Jonah 4:11 / end of the book',"The book ends with the question. It does not report a reply or a later change of mind.")
 ]
 roles=[
  ('Reader','Read Jonah 3:9–4:11 aloud from your chosen Bible. Reread a requested verse and its surrounding sentence.'),
@@ -80,7 +80,7 @@ for code,claim,category,ref,key in cards:
  y=wrap(38,y,code+' · '+category+' · '+ref+' — '+key,536,9.2,leading=12)-5
 text(38,y-3,'A QUESTION TO LEAVE WITH',9,'Bold',accent);y-=20
 y=wrap(38,y,'How does the final question change the way you read the earlier scene with the plant? Point to details in Jonah 4:6–11. Keep personal reflection separate from claims about what Jonah did next.',536,9.5,leading=13)-10
-y=wrap(38,y,'Reuse: groups, teachers and libraries may print, photocopy or share the complete, unmodified packet free with credit to Honest Little Apps. All cards and instructions are original paraphrases. No Bible translation text is reproduced.',536,8.2,leading=11)
+y=wrap(38,y,'Reuse: groups, teachers and libraries may print, photocopy or share the complete, unmodified packet free with credit to Honest Little Apps. Cards include statements to test against the passage. All teaching prompts are original. Bring your group’s Bible.',536,8.2,leading=11)
 assert y>68,y
 footer(2);c.showPage();c.save()
 h=['<section class="section" id="jonah-evidence-sort"><h2>Try a group evidence sort with Jonah</h2><p>Read Jonah 3:9–4:11 together. Then sort six claims into three categories using the text as your evidence. The final question gives the group something to return to after checking its answers.</p><p><a href="jonah-ending-evidence-sort.pdf">Print the two-page facilitator packet (PDF)</a></p><details><summary>Use the complete group activity on screen</summary><p>Suggested length: 20 minutes. Adjust the pace to your group. The activity is a close-reading exercise for adults or teens.</p><h3>Run the session</h3><ol>']
@@ -91,5 +91,5 @@ h+=['</dl><h3>Sort the six claims</h3><p><strong>Supports</strong> means the tex
 for code,claim,*rest in cards:h+=['<li>'+escape(claim)+'</li>']
 h+=['</ol><p>For each card, name a category and the verse that led to it.</p><details><summary>Read the referenced answer key</summary><ol type="A">']
 for code,claim,category,ref,key in cards:h+=['<li><strong>'+category+'</strong> — '+escape(ref)+'. '+escape(key)+'</li>']
-h+=['</ol></details><h3>A question to leave with</h3><p>How does the final question change the way you read the earlier scene with the plant? Point to details in Jonah 4:6–11. Keep personal reflection separate from claims about what Jonah did next.</p></details><p>Groups, teachers and libraries may print, photocopy or share the complete, unmodified packet free with credit to Honest Little Apps.</p><p>Cards and instructions are original paraphrases. References were checked against <a href="https://ebible.org/engwebp/JON03.htm">Jonah 3</a> and <a href="https://ebible.org/engwebp/JON04.htm">Jonah 4</a> in the public-domain World English Bible. Use your group’s own translation while comparing the wording.</p></section>']
+h+=['</ol></details><h3>A question to leave with</h3><p>How does the final question change the way you read the earlier scene with the plant? Point to details in Jonah 4:6–11. Keep personal reflection separate from claims about what Jonah did next.</p></details><p>Groups, teachers and libraries may print, photocopy or share the complete, unmodified packet free with credit to Honest Little Apps.</p><p>Cards include statements to test against the passage. All teaching prompts are original. References were checked against <a href="https://ebible.org/engwebp/JON03.htm">Jonah 3</a> and <a href="https://ebible.org/engwebp/JON04.htm">Jonah 4</a> in the public-domain World English Bible. Use your group’s own translation while comparing the wording.</p></section>']
 (base/'section.html').write_text(''.join(h))
